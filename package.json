@@ -1,0 +1,23 @@
+{
+  "name": "md-js-player",
+  "version": "1.3.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-debug": "browserify index.js -d --s md-player > dist/md-player.js",
+    "build-min": "browserify index.js --s md-player | uglifyjs -c > dist/md-player-1.3.min.js",
+    "build": "npm run build-debug && npm run build-min",
+    "watch": "watchify index.js -d --s md-player -o dist/md-player.js -v"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "audio5": "^0.1.10",
+    "cash-dom": "^1.2.0",
+    "jquery": "^2.2.3",
+    "jsonp": "^0.2.0",
+    "mustache": "^2.2.1",
+    "redux": "^3.5.2"
+  }
+}
