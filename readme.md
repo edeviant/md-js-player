@@ -77,7 +77,7 @@ Always do an updated min build for production
 Based on: _http://makerlog.org/posts/creating-js-library-builds-with-browserify-and-other-npm-modules_
 
 - run npm install
-- insure browserify, uglifyjs, deamdify, and watchify are installed globally
+- ensure browserify, uglifyjs, deamdify, and watchify are installed globally
 - run `npm run watch` for active development
 - run `npm run build-debug` for dev (debug) build
 - run `npm run build-min` for minify (production) build
